@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8" />
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+
+
+      <div>
+         <textarea id="txtOutput" rows="4" cols="50" data-bind="textInput: output">
+         </textarea>
+      </div>
+      <table>
+      <tr>
+         <td><button data-bind="click: textOut('あ')">あ</button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+         <td><button data-bind="click: textOut('')"></button></td>
+      </tr>
+      </table>
+      <script type="text/javascript">
+         
+         (function($) {
+            $(document).ready(function(){
+               ko.applyBindings(new MainViewModel());
+            });
+         })(jQuery);
+
+         function MainViewModel() {
+            var self = this;
+
+            self.textOut = function(val) {
+               self.output(self.output() + val);
+            }
+
+            self.output = ko.observable("");
+         }
+      </script>
+
+   </body>
+</html>
