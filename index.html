@@ -13,23 +13,96 @@
          </textarea>
       </div>
       <table>
-      <tr>
-         <td><button data-bind="click: textOut('あ')">あ</button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-         <td><button data-bind="click: textOut('')"></button></td>
-      </tr>
+<tr>
+         <td><button data-bind="click: textOut.bind($data,'あ')">あ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'か')">か</button></td>
+         <td><button data-bind="click: textOut.bind($data,'が')">が</button></td>
+         <td><button data-bind="click: textOut.bind($data,'さ')">さ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ざ')">ざ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'た')">た</button></td>
+         <td><button data-bind="click: textOut.bind($data,'だ')">だ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'な')">な</button></td>
+         <td><button data-bind="click: textOut.bind($data,'は')">は</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ば')">ば</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぱ')">ぱ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ま')">ま</button></td>
+         <td><button data-bind="click: textOut.bind($data,'や')">や</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ら')">ら</button></td>
+         <td><button data-bind="click: textOut.bind($data,'わ')">わ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ん')">ん</button></td>
+</tr>
+<tr>
+         <td><button data-bind="click: textOut.bind($data,'い')">い</button></td>
+         <td><button data-bind="click: textOut.bind($data,'き')">き</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぎ')">ぎ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'し')">し</button></td>
+         <td><button data-bind="click: textOut.bind($data,'じ')">じ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ち')">ち</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぢ')">ぢ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'に')">に</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ひ')">ひ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'び')">び</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぴ')">ぴ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'み')">み</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+         <td><button data-bind="click: textOut.bind($data,'り')">り</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+</tr>
+<tr>
+         <td><button data-bind="click: textOut.bind($data,'う')">う</button></td>
+         <td><button data-bind="click: textOut.bind($data,'く')">く</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぐ')">ぐ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'す')">す</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ず')">ず</button></td>
+         <td><button data-bind="click: textOut.bind($data,'つ')">つ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'づ')">づ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぬ')">ぬ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ふ')">ふ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぶ')">ぶ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぷ')">ぷ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'む')">む</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ゆ')">ゆ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'る')">る</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+</tr>
+<tr>
+         <td><button data-bind="click: textOut.bind($data,'え')">え</button></td>
+         <td><button data-bind="click: textOut.bind($data,'け')">け</button></td>
+         <td><button data-bind="click: textOut.bind($data,'げ')">げ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'せ')">せ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぜ')">ぜ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'て')">て</button></td>
+         <td><button data-bind="click: textOut.bind($data,'で')">で</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ね')">ね</button></td>
+         <td><button data-bind="click: textOut.bind($data,'へ')">へ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'べ')">べ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぺ')">ぺ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'め')">め</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')"></button></td>
+         <td><button data-bind="click: textOut.bind($data,'れ')">れ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+</tr>
+<tr>
+         <td><button data-bind="click: textOut.bind($data,'お')">お</button></td>
+         <td><button data-bind="click: textOut.bind($data,'こ')">こ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ご')">ご</button></td>
+         <td><button data-bind="click: textOut.bind($data,'そ')">そ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぞ')">ぞ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'と')">と</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ど')">ど</button></td>
+         <td><button data-bind="click: textOut.bind($data,'の')">の</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ほ')">ほ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぼ')">ぼ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ぽ')">ぽ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'も')">も</button></td>
+         <td><button data-bind="click: textOut.bind($data,'よ')">よ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'ろ')">ろ</button></td>
+         <td><button data-bind="click: textOut.bind($data,'を')">を</button></td>
+         <td><button data-bind="click: textOut.bind($data,'-')">-</button></td>
+</tr>
       </table>
       <script type="text/javascript">
          
@@ -48,7 +121,96 @@
 
             self.output = ko.observable("");
          }
-      </script>
+/*
 
+
+BUTTONS
+##
+あ	
+か	
+が	
+さ	
+ざ	
+た	
+だ	
+な	
+は	
+ば	
+ぱ	
+ま	
+や	
+ら	
+わ	
+ん	
+##
+い	
+き	
+ぎ	
+し	
+じ	
+ち	
+ぢ	
+に	
+ひ	
+び	
+ぴ	
+み	
+－	
+り	
+－	
+-	
+##
+う	
+く	
+ぐ	
+す	
+ず	
+つ	
+づ	
+ぬ	
+ふ	
+ぶ	
+ぷ	
+む	
+ゆ	
+る	
+－	
+-	
+##
+え	
+け	
+げ	
+せ	
+ぜ	
+て	
+で	
+ね	
+へ	
+べ	
+ぺ	
+め	
+－	
+れ	
+－	
+-	
+##
+お 
+こ 
+ご 
+そ 
+ぞ 
+と 
+ど 
+の 
+ほ 
+ぼ 
+ぽ 
+も 
+よ 
+ろ 
+を 
+-
+*/
+      </script>
    </body>
 </html>
